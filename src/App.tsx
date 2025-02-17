@@ -16,10 +16,13 @@ function App() {
       typeof row === 'object' &&
       'Employee_Name' in row &&
       'Employee_EmailID' in row &&
+      'Team' in row &&
       typeof row.Employee_Name === 'string' &&
       typeof row.Employee_EmailID === 'string' &&
+      typeof row.Team === 'string' &&
       row.Employee_Name.trim() !== '' &&
-      row.Employee_EmailID.trim() !== ''
+      row.Employee_EmailID.trim() !== '' &&
+      row.Team.trim() !== ''
     );
   };
 
